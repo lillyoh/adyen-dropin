@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet"
+  href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+  <link rel="stylesheet" href="https://checkoutshopper-test.adyen.com/checkoutshopper/sdk/{VERSION}/adyen.css"
+integrity="sha384-oT6lIQpTr+nOu+yFBPn8mSMkNQID9wuEoTw8lmg2bcrFoDu/Ae8DhJVj+T5cUmsM"
+crossorigin="anonymous">
+<!-- Adyen provides the SRI hash that you include as the integrity attribute. -->
+<!-- Refer to our release notes to get the SRI hash for the specific version: https://docs.adyen.com/online-payments/release-notes -->
+
+  <title>Plant Shop</title>
+</head>
+
+
+<body>
+
+  <script src="https://checkoutshopper-test.adyen.com/checkoutshopper/sdk/{VERSION}/adyen.js"
+integrity="sha384-SGA+BK9i1sG5N4BTCgRH6EGbopUK8WG/azn/TeIHYeBEXmEaB+NT+410Z9b1ii7Z"
+crossorigin="anonymous"></script>
+<!-- Adyen provides the SRI hash that you include as the integrity attribute.-->
+<!-- Refer to our release notes to get the SRI hash for the specific version: https://docs.adyen.com/online-payments/release-notes -->
+
+
+
+<div class="shopper-info-container">
+  <form method="POST">
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="name" placeholder="Name" required>
+    <input class="button" type="submit" value="Submit">
+  </form>
+</div>
+
+<div id="dropin-container">
+
+</div>
+</body>
+</html>

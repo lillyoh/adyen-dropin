@@ -10,8 +10,15 @@ const client = new Client({ config });
 client.setEnvironment('TEST');
 const checkout = new CheckoutAPI(client);
 
-// Get available payment methods
 
+// Render HTML file into the server
+app.use(express.static(__dirname));
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+})
+
+
+// Get available payment methods
 app.post('/', async (req, res) => {
   try {
     const response = await checkout.paymentMethods({
